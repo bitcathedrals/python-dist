@@ -18,7 +18,7 @@ HEAD
       sha256=`sha256sum ${file} | tr -s ' ' | cut -d ' ' -f 1`
       name=`basename ${file}`
 
-      echo >>${project}.html "<a href=\"/${project}/${name}#sha256=${sha256}\">${name}</a>"
+      echo >>${project}.html "<a href=\"/simple/${project}/${name}#sha256=${sha256}\">${name}</a>"
     done
 
 
