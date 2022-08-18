@@ -2,7 +2,7 @@
 
 ./upload-packages.sh
 
-mv local/* remote/
+mv simple/* remote/
 
 ./upload-index.sh
 

@@ -1,0 +1,20 @@
+[
+    {
+        "Condition": {
+            "HttpErrorCodeReturnedEquals": "404",
+            "KeyPrefixEquals": "/simple/python/"
+        },
+        "Redirect": {
+            "ReplaceKeyWith": "/simple/files.html"
+        }
+    },
+    {
+        "Condition": {
+            "HttpErrorCodeReturnedEquals": "404",
+            "KeyPrefixEquals": "/simple/"
+        },
+        "Redirect": {
+            "ReplaceKeyWith": "/simple/packages.html"
+        }
+    }
+]

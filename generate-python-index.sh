@@ -24,7 +24,7 @@ verify_ssl = true
 name = "pypi"
 
 [[source]]
-url = "http://bitcathedrals.com/python/"
+url = "http://bitcathedrals.com/simple"
 verify_ssl = false
 name = "bitcathedrals"
 
@@ -32,7 +32,7 @@ name = "bitcathedrals"
 
 [packages]
 numpy = "*"
-json_decorator-0.0.5 = {index = "bitcathedrals"}
+json_decorator = {version = "0.5.0", index = "bitcathedrals"}
       </pre>
 
       <h2>Packages</h2>
@@ -40,7 +40,7 @@ json_decorator-0.0.5 = {index = "bitcathedrals"}
         <ul>
 TOP
 
-(cd remote && ls * | sort | xargs -I %  echo "<li><a href="http://bitcathedrals.com/python/%">%</li>" >>${PACKAGES_DIR}/index.html)
+(cd remote && ls */** | sort | xargs -I %  echo "<li><a href=\"http://bitcathedrals.com/simple/%\">%</li>">>${PACKAGES_DIR}/index.html)
 
 cat >>index.html <<BOTTOM
       </ul>
