@@ -7,4 +7,4 @@ then
   DRY_RUN="--dryrun"
 fi
 
-aws s3 cp simple s3://bitcathedrals.com/simple/ --profile root --recursive $DRY_RUN
+aws s3 cp simple s3://python.bitcathedrals.com/simple/ --profile root --recursive $DRY_RUN

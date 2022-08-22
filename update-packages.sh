@@ -28,7 +28,7 @@ HEAD
 
       echo >>${project}.html "<a href=\"/simple/${project}/${name}#sha256=${sha256}\">${name}</a>"
 
-      echo >>${project}-browse.html "<li><a href=\"http://bitcathedrals.com/simple/${project}/${name}\">${name}</a></li>"
+      echo >>${project}-browse.html "<li><a href=\"http://python.bitcathedrals.com/simple/${project}/${name}\">${name}</a></li>"
     done
 
     cat >>${project}.html <<TAIL
@@ -42,8 +42,8 @@ TAIL
 </html>
 TAIL
 
-    aws s3 cp ${project}.html "s3://bitcathedrals.com/simple/${project}/index.html" --profile root
-    aws s3 cp ${project}-browse.html "s3://bitcathedrals.com/simple/${project}/browse.html" --profile root
+    aws s3 cp ${project}.html "s3://python.bitcathedrals.com/simple/${project}/index.html" --profile root
+    aws s3 cp ${project}-browse.html "s3://python.bitcathedrals.com/simple/${project}/browse.html" --profile root
 done
 
 
