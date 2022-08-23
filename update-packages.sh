@@ -21,7 +21,7 @@ HEAD
     <ul>
 HEAD
 
-    for file in $(find ${subdir} -type f -depth 1 -print)
+    for file in $(find ${subdir} -type f -depth 1 -print | sort)
     do
       sha256=`sha256sum ${file} | tr -s ' ' | cut -d ' ' -f 1`
       name=`basename ${file}`
