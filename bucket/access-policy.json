@@ -10,8 +10,8 @@
                "s3:ListBucket"
             ],
             "Resource": [ 
-               "arn:aws:s3:::bitcathedrals.com/*",
-               "arn:aws:s3:::bitcathedrals.com" ]
+               "arn:aws:s3:::python.codermattie.net/*",
+               "arn:aws:s3:::python.codermattie.net" ]
         }
     ]
 }

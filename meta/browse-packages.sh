@@ -24,15 +24,15 @@ verify_ssl = true
 name = "pypi"
 
 [[source]]
-url = "http://bitcathedrals.com/simple"
+url = "http://python.codermattie.net/simple"
 verify_ssl = false
-name = "bitcathedrals"
+name = "codermattie"
 
 [dev-packages]
 
 [packages]
 numpy = "*"
-json_decorator = {version = "0.5.0", index = "bitcathedrals"}
+json_decorator = {version = "0.5.0", index = "codermattie"}
       </pre>
 
       <h2>Packages</h2>
@@ -40,7 +40,7 @@ json_decorator = {version = "0.5.0", index = "bitcathedrals"}
         <ul>
 TOP
 
-(cd remote && ls */** | sort | xargs -I %  echo "<li><a href=\"http://bitcathedrals.com/simple/%\">%</li>">>${PACKAGES_DIR}/index.html)
+(cd remote && ls */** | sort | xargs -I %  echo "<li><a href=\"http://python.codermattie.net/simple/%\">%</li>">>${PACKAGES_DIR}/index.html)
 
 cat >>index.html <<BOTTOM
       </ul>
